@@ -1,0 +1,172 @@
+body {
+    background-color: #f3f3f3 !important
+}
+
+
+main {
+    margin: 5px 380px !important;
+}
+
+@media (max-width: 1628px) {
+    main {
+        margin: 5px 180px !important; 
+    }
+}
+
+@media (max-width: 1418px) {
+    main {
+        margin: 5px 100px !important;
+    }
+}
+
+@media (max-width: 1261px) {
+    main {
+        margin: 5px 0 !important;
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        margin: 0 !important;
+    }
+}
+
+
+hr {
+    border: 1px solid #448fd0;
+    margin: 10px 18px;
+}
+
+.hr-second {
+    margin: 3px 0px;
+    border: 1px solid #448fd059;
+}
+
+h3 {
+    font-size: 21px;
+    color: #448fd0;
+    font-weight: 900;
+}
+
+
+.banner {
+    width: 100%;
+    background-color: #88adff;
+    margin-top: 70px;
+    padding: 10px 240px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 1350px) {
+    .banner {
+        padding: 10px 180px ; 
+    }
+}
+
+@media (max-width: 1392px) {
+    .banner {
+        padding: 10px 50px !important;
+    }
+}
+
+@media (max-width: 954px) {
+    .banner {
+        padding: 10px 50px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner {
+        padding: 10px 10px !important;
+        font-size: 20px;
+    }
+}
+
+.inmueble-pt1 {
+    padding: 20px;
+    }    
+
+.main-card {
+    background-color: white;
+    height: 100%;
+    padding: 35px 20px;
+}
+
+.inmueble-titulo {
+    font-size: 30px;
+}
+
+.inmueble-precio {
+    font-size: 36px;
+    color: #e4a000;
+    margin-top: 15px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+.contacto-button {
+    background-color: #448fd0;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px 15px;
+}
+
+.especificaciones-basicas {
+    margin-top: 15px;
+}
+
+.especificacion {
+    font-weight: 600;
+}
+
+.especificacion-tmplt {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.descripcion {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.col-12{
+    position: relative;
+    width: 100%;
+    padding-right: unset;
+    padding-left: unset;
+}
+
+.row {
+    margin-right: unset;
+    margin-left: unset;
+}
+
+.amenities > img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 15px;
+    display: none;
+}
+
+.col-2 {
+    padding: 0;
+}
+/* Carousel */
+
+  .carousel-inner img{
+    height: 520px;
+    object-fit: cover;
+  }
+
+    @media (max-width: 550px) {
+        .carousel-inner img {
+            height: 300px;
+        }
+    }

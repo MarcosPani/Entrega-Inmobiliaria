@@ -1,0 +1,53 @@
+.inicioS-bg {
+    background-color: #448fd0b3;
+    height: 500px;
+}
+
+.inicioS-card {
+    background-color: white;
+    margin: -380px auto 180px;
+    max-width: 660px;
+    padding: 30px 60px;
+    box-shadow: 0px -1px 11px 1px #00000020;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h2{
+    margin-bottom: 25px
+}
+
+@media (max-width: 397px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
+
+.publicar-button {
+    background-color: #448fd0;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 25px;
+    box-shadow: 0 0 20px 1px #448fd085;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.alerta-operacion, .alerta-propiedad, .alerta-ambientes, .alerta-precio, .alerta-ubicacion, .alerta-estado {
+    color: #ff5815;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.aviso {
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+}

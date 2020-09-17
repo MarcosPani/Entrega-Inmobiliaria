@@ -1,0 +1,78 @@
+.inicioS-bg {
+    background-color: #448fd0b3;
+    height: 280px;
+}
+
+.inicioS-card {
+    background-color: white;
+    margin: -180px auto 0;
+    max-width: 500px;
+    padding: 30px 60px;
+    box-shadow: 0px -1px 11px 1px #00000020;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+}
+
+@media (max-width: 515px) {
+    .inicioS-card {
+        margin: -130px auto 0px;
+    }
+}
+
+.input-title {
+    font-size: 20px;
+    color: #7cb0de;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.input-IS {
+    border: 2px solid #7cb0de; 
+    padding: 5px 15px;
+    font-size: 21px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 515px) {
+    .input-IS {
+        padding: 5px 5px;
+        font-size: 18px;
+    }
+}
+
+.iniciarS-button {
+    background-color: #448fd0;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 25px;
+    box-shadow: 0 0 20px 1px #448fd085;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.registro > a {
+    font-size: 15px;
+    color: #448fd0
+}
+
+.registro > a:hover{
+    color: #7cb0de;
+    text-decoration: underline;
+}
+
+@media (max-width: 350px) {
+    .registro > a {
+        font-size: 13px;
+    }
+}
+
+.error-correo, .error-pass {
+    color: #ff5815;
+    font-size: 12px;
+    font-weight: bold;
+}

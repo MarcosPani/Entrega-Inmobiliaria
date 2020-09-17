@@ -1,0 +1,104 @@
+.desktop-menu,
+.mobile-menu {
+    background-color: #448fd0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-menu .logo,
+.mobile-menu .logo {
+    height: 50px;
+    margin: 10px;
+}
+
+.desktop-menu > nav > a {
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;   
+}
+
+.desktop-menu > nav > a:hover {
+    background-color: #eaeaea;
+    transition: background-color ease .3s;
+}
+
+.desktop-menu > nav > a.login-button {
+    background-color: #88adff;
+    margin-left: 20px;
+    color: white;
+}
+
+.desktop-menu > nav > a.publicar-button {
+    background-color: #88adff;
+    margin-left: 20px;
+    color: white;
+}
+
+.desktop-menu-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+/* Menu mobile */
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu > button {
+    padding: 20px;
+    color: #fff;
+    border: none;
+    background: #81bdf1;
+}
+
+.mobile-menu > button:focus {
+    outline: none;
+}
+
+.mobile-menu-actions {
+    display: none;
+}
+
+.mobile-menu-actions > a {
+    padding: 15px;
+    background-color: #81bdf1;
+    transition: background-color ease .4s;
+    border-bottom: 2px solid #ffffffab;
+    color: white;
+    font-weight: 500;
+}
+
+.mobile-menu-actions > a:hover {
+    background-color: #448fd0;
+    transition: background-color ease .3s;
+}
+
+@media (max-width: 800px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-actions.opened {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+}

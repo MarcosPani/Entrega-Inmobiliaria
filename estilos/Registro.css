@@ -1,0 +1,87 @@
+.inicioS-bg {
+    background-color: #448fd0b3;
+    height: 280px;
+}
+
+@media (max-width: 575px) {
+    .inicioS-bg {
+        display: none;
+    }
+}
+
+.inicioS-card {
+    background-color: white;
+    margin: -180px auto 0;
+    max-width: 900px;
+    padding: 30px 60px;
+    box-shadow: 0px -1px 11px 1px #00000020;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    .inicioS-card {
+        margin: 0px;
+        padding: 30px 30px;
+    }
+}
+
+.input-title {
+    font-size: 20px;
+    color: #7cb0de;
+    font-weight: normal;
+    text-align: left;
+}
+
+.input-IS {
+    border: 2px solid #7cb0de;
+    padding: 5px 15px;
+    font-size: 21px;
+    width: 100%;
+}
+
+.input-IS2 {
+    border: 2px solid #7cb0de;
+    padding: 5px 15px;
+    font-size: 21px;
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .input-IS {
+        padding: 5px 5px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .input-IS2 {
+        margin-bottom: 25px;
+        padding: 5px 5px;
+        font-size: 18px;
+    }
+}
+
+.pass-info {
+    font-size: 16px;
+    color: #909090;
+}
+
+.iniciarS-button {
+    background-color: #448fd0;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 25px;
+    box-shadow: 0 0 20px 1px #448fd085;
+    margin-top: 20px;
+}
+
+.error-correo, .error-pass, .error-nombre, .error-apellido {
+    color: #ff5815;
+    font-size: 12px;
+    font-weight: bold;
+}
+

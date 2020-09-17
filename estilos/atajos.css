@@ -1,0 +1,37 @@
+.atajoMO, .atajoCA, .atajosMA{
+    height: 200px;
+    max-width: 350px;
+    margin: 0px 20px 20px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.atajoMO{
+    background-image: url(https://http2.mlstatic.com/resources/frontend/classifieds-homes-premium/popular-locations/0.0.4/uy/TUxVQ01PTjc2Nzc--xs-wide.jpg);
+    background-size: cover;
+} 
+.atajoCA{
+    background-image: url(https://http2.mlstatic.com/resources/frontend/classifieds-homes-premium/popular-locations/0.0.4/uy/TUxVUENBTnMxNzliYw--xs-wide.jpg);
+    background-size: cover;
+} 
+.atajosMA{
+    background-image: url(https://http2.mlstatic.com/resources/frontend/classifieds-homes-premium/popular-locations/0.0.4/uy/TUxVUE1BTFo5OWMx--xs-wide.jpg);
+    background-size: cover;
+}
+
+.tdoButton {
+    background-color: #448fd0;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+p {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 0 0 20px black;
+}

@@ -1,0 +1,72 @@
+.busqueda {
+    background-image: url(https://conocer365.uy/wp-content/uploads/2019/04/Intendencia_bah%C3%ADa.jpg); background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 380px;
+    padding-top: 180px;
+}
+.busqueda input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 310px;
+    background: #ffffff7d;
+    box-shadow: 0 0 20px 0px #6161619c;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.busqueda button {
+    border-radius: 20px;
+    border: 2px solid #448fd0;
+    padding: 10px;
+    width: 95px;
+    background: #448fd0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+.atajos {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 50px 50px 50px;
+}
+
+@media (max-width: 639px) {
+    .atajos{
+        display: none;
+    }  
+}
+
+.h2-inmobiliarias > a{
+    color: #448fd0; 
+    margin-bottom: 20px;
+}
+
+.h2-inmobiliarias > a:hover{
+    color: #88adff;
+    text-decoration: none; 
+}
+
+.h2-venta {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.carousel-indicators > li {
+    background-color: #448fd0;
+}
+
+.atajos-2 {
+    background-color: #448fd066 ;
+    padding: 20px 50px 50px 50px;
+    text-align: center;
+}
+
+.atajos-2 > div > a:hover {
+    text-decoration: none;
+}
+
+

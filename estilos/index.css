@@ -1,0 +1,30 @@
+/* Imagen de fondo con caja de busqueda */
+.search-section {
+    padding-top: 80px;
+    padding-bottom: 170px;
+    text-align: center;
+}
+
+.search-section input {
+    border-radius: 3px;
+    border: 2px solid #ff0000;
+    padding: 10px;
+    width: 280px;
+}
+
+.search-section button {
+    border-radius: 2px;
+    border: 2px solid blue;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+.banners-section {
+    height: 300px;
+    background-color: aquamarine;
+}
+
+.quick-filters-section {
+    height: 300px;
+    background-color: chocolate;
+}
