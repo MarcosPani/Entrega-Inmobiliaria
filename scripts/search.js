@@ -4,7 +4,13 @@ function search() {
     location.href="inmuebles.html";
 }
 
-const inmuebles = [
+
+
+
+function getDataFromAPI(filtros) {
+    // TODO: Obtener datos del servidor
+    // De momento vamos a retornar datos "quemados", luego deben venir del servidor
+    const propiedades = [
         {
             id: 1,
             operacion: 'Venta',
@@ -28,8 +34,8 @@ const inmuebles = [
                 'imagenes/inmuebles/inmueble-1-img-1.jpg',
                 'imagenes/inmuebles/inmueble-1-img-2.jpg'
             ],
+            departamento: 'Montevideo',
             ubicacion: {
-                departamento: '',
                 barrio: 'Reducto',
                 codigoPostal: '',
                 direccion: 'Guaycuru 2799'
@@ -66,8 +72,8 @@ const inmuebles = [
             imagenes: [
                 'imagenes/inmuebles/inmueble-2-img-1.jpg',
             ],
+            departamento: 'Montevideo',
             ubicacion: {
-                departamento: '',
                 barrio: 'Malvin',
                 codigoPostal: '',
                 direccion: 'Quiebrayugos 4635'
@@ -108,8 +114,8 @@ const inmuebles = [
                 'imagenes/inmuebles/inmueble-3/36839_399_859.jpg.th810.jpg',
                 'imagenes/inmuebles/inmueble-3/36839_399_940.jpg.th810.jpg',
             ],
+            departamento: 'Montevideo',
             ubicacion: {
-                departamento: '',
                 barrio: 'Prado',
                 codigoPostal: '',
                 direccion: 'Gral Hornos 4258'
@@ -125,12 +131,6 @@ const inmuebles = [
             }
         }
     ]
-
-
-function getDataFromAPI(filtros) {
-    // TODO: Obtener datos del servidor
-    // De momento vamos a retornar datos "quemados", luego deben venir del servidor
-
 
     // Esto realmente lo hace el API
     const propiedadesFiltradas = propiedades.filter(
@@ -149,12 +149,11 @@ function getDataFromAPI(filtros) {
 
             // Operacion
             const laOperacionCoincide = propiedad.operacion === filtros.tipoDeOperacion
-
             
             //Ubicacion
-            const enMontevideo = filtros.departamento.montevideo ? propiedad.ubicacion.departamento === 'Montevideo' : true
-            const enCanelones = filtros.departamento.canelones ? propiedad.ubicacion.departamento === 'Canelones' : true
-            const enMaldonado = filtros.departamento.maldonado ? propiedad.ubicacion.departamento === 'Maldonado' : true
+            const enMontevideo = filtros.departamento.montevideo ? propiedad.departamento === 'Montevideo' : true
+            const enCanelones = filtros.departamento.canelones ? propiedad.departamento === 'Canelones' : true
+            const enMaldonado = filtros.departamento.maldonado ? propiedad.departamento === 'Maldonado' : true
 
             // Amenities
             const conGaraje = filtros.amenities.garaje ? propiedad.amenities.garaje : true
@@ -174,15 +173,21 @@ function getDataFromAPI(filtros) {
             const conDosBaño = filtros.baños.dosBaño ? propiedad.habitaciones.banos == 2 : true 
             const conTresBaño = filtros.baños.tresBaño ? propiedad.habitaciones.banos >= 3 : true     
 
+            //Rango Precios
+            let precioMin = document.querySelector('#precioMin')
+            let precioMax = document.querySelector('#precioMax')
+            let rangoPrecio
+            
+            if (precioMax.value.length == 0) {
+                rangoPrecio = true
+            }else {
+                rangoPrecio = propiedad.precio.monto >= precioMin.value && propiedad.precio.monto <= precioMax.value
+            }
+            
             //Estado
             let mostrarUsados
             let mostrarEnConstruccion
             let mostrarAEstrenar
-
-            let precioMin = document.querySelector('#precioMin').value
-            let precioMax = document.querySelector('#precioMax').value
-
-            const rangoPrecio = propiedad.precio.monto >= precioMin && propiedad.precio.monto <= precioMax
         
             if (filtros.estado.enConstruccion && filtros.estado.usado && filtros.estado.aEstrenar){
                 mostrarUsados = true
@@ -197,7 +202,7 @@ function getDataFromAPI(filtros) {
 
             // Resultado del filtro
             return laOperacionCoincide && mostrarCasas && mostrarApartamentos && conGaraje && tieneSeguridad && tieneJardin && conUnBaño && conDosBaño && conTresBaño && conUnDormitorio && conDosDormitorio && conTresDormitorio && conCuatroDormitorio && conPiscina 
-            && conAmueblado && mostrarUsados && mostrarEnConstruccion && mostrarAEstrenar && enMaldonado && enCanelones && enMontevideo && rangoPrecio
+            && conAmueblado && mostrarUsados && mostrarEnConstruccion && mostrarAEstrenar && rangoPrecio && enMontevideo && enCanelones && enMaldonado
         }
     )
 

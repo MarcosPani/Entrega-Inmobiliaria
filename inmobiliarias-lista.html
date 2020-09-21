@@ -18,11 +18,11 @@
         <link rel="stylesheet" href="estilos/general.css">
         <link rel="stylesheet" href="estilos/navigation.css">
         <link rel="stylesheet" href="estilos/index.css">
-        <link rel="stylesheet" href="estilos/inmobliarias.css">
+        <link rel="stylesheet" href="estilos/inmobliarias-lista.css">
 
         <title>Mi casa</title>
     </head>
-    <body  onload="cargarDetalles()">
+    <body onload="cargarInmobiliarias()">
         <!-- Navegacion Desktop -->
         <header class="desktop-menu">
             <a href="index.html">
@@ -54,24 +54,22 @@
             <a href="inmuebles.html?tipoDeOperacion=Alquiler">Alquiler</a>
             <a class="login-button" href="inicio-de-sesion.html">Iniciar Sesión</a>
         </nav>
-
-        <!-- Contenido principal -->
         <main>
-            <div class="portada"></div>
-            <div class="detalles row">
-                <div class="col-sm-9 col-12">
-                    <h2 id="nombre"></h2>
-                    <div class="descripcion"></div>
-                </div>
-                <div class=" col-sm-3 col-12" >
-                    <img class="perfil">
-                    <div class="contacto">
-                        <div class="row"><i class="fas fa-phone col-2"></i><div class="col-10" id="telefono"></div></div>
-                        <div class="row"><i class="fas fa-map-marker-alt col-2"></i></i><div class="col-10" id="direccion"></div></div>
-                        <div class="row"><i class="fas fa-envelope col-2"></i><div class="col-10" id="correo"></div></div>
+            <h2>
+                Inmobiliarias
+            </h2>
+            <div class="row items-container">
+                <div class="col-6 col-sm-4">                
+                    <div class="item-card">
+                        <div class="foto-inmobiliaria">
+                            <img src="imagenes/inmobis/abate.png">
+                        </div>
+                        <div class="item-details">
+                            <a class="item-title">Abate Propiedades</a>
+                        </div>
                     </div>
-                </div>
             </div>
+        
         </main>
         
 
@@ -80,6 +78,11 @@
             <!-- TODO: Links a redes sociales -->
             <!-- TODO: Copyright con fecha dinamica -->
         </footer>
+
+        <template id="itemTemplate">
+                
+                </div>
+        </template>
 
         <!-- jQuery, Popper.js, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

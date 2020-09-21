@@ -16,32 +16,38 @@
 }
 
 .desktop-menu > nav > a {
-    background-color: white;
-    color: black;
-    border-radius: 7px;
+    color: white;
     text-decoration: none;
     padding: 10px;
-    margin-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 500;   
+    font-weight: 500;
+    height: 100%;
+    padding-top: 25px;
 }
 
 .desktop-menu > nav > a:hover {
-    background-color: #eaeaea;
+    background-color: #ffffff42;
     transition: background-color ease .3s;
 }
+
+
 
 .desktop-menu > nav > a.login-button {
     background-color: #88adff;
     margin-left: 20px;
     color: white;
+    height: inherit;
+    padding: 10px;
 }
 
 .desktop-menu > nav > a.publicar-button {
-    background-color: #88adff;
-    margin-left: 20px;
+    /*background-color: #88adff;
+    margin-right: 20px;
     color: white;
+    height: inherit;
+    padding: 10px;*/
+    color: #ffd600;
 }
 
 .desktop-menu-actions {

@@ -15,5 +15,5 @@ function readUrlParameters() {
         document.querySelector('#ubicacionCA').checked = true
     }else if (parametrosDeUrl.get('ubicacion') == 'MA'){
         document.querySelector('#ubicacionMA').checked = true
-    }else{} 
+    }else{}
 }

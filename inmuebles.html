@@ -21,7 +21,7 @@
 
         <title>Mi casa</title>
     </head>
-    <body onload="readUrlParameters(); applyFilter(); pruebaParametrosURL()">
+    <body onload="readUrlParameters(); applyFilter();">
                 <!-- Navegacion Desktop -->
                 <header class="desktop-menu">
                     <a href="index.html">
@@ -29,10 +29,9 @@
                     </a>
         
                     <nav class="desktop-menu-actions">
-                        <a class="publicar-button" href="publicar.html">Publicar</a>
-                        <a href="inmuebles.html">Venta</a>
-                        <a href="inmuebles.html?tipoDeOperacion=Alquiler">Alquiler</a>
-                        <a href="inmobiliarias.html">Inmobiliarias</a>
+                        <a class="publicar-button" href="publicar.html" id="publicar">Publicar</a>
+                        <a href="inmuebles.html" id="venta">Venta</a>
+                        <a href="inmuebles.html?tipoDeOperacion=Alquiler" id="alquiler">Alquiler</a>
                         <a class="login-button" href="inicio-de-sesion.html">Iniciar Sesión</a>
                     </nav>
                 </header>
@@ -51,8 +50,7 @@
                 <nav class="mobile-menu-actions">
                     <a href="publicar.html">Publicar</a>
                     <a href="inmuebles.html">Venta</a>
-                    <a href="inmuebles.html?tipoDeOperacion=Alquiler">Alquiler</a>
-                    <a href="inmobiliarias.html">Inmobiliarias</a>
+                    <a href="inmuebles.html?tipoDeOperacion=Alquiler">Alquiler</a>                   
                     <a class="login-button" href="inicio-de-sesion.html">Iniciar Sesión</a>
                 </nav>
         <div class="filters-mobile"><button onclick="filtrosMobile()">Filtros</button></div>
@@ -232,19 +230,19 @@
                     <hr>
                     <p>Ubicacion</p>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Montevideo" id="ubicacionMO">
+                        <input class="form-check-input" type="radio" name="departamento" value="Montevideo" id="ubicacionMO">
                         <label class="form-check-label" for="ubicacionMO">
                             Montevideo
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Canelones" id="ubicacionCA">
+                        <input class="form-check-input" type="radio" name="departamento" value="Canelones" id="ubicacionCA">
                         <label class="form-check-label" for="ubicacionCA">
                             Canelones
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Maldonado" id="ubicacionMA">
+                        <input class="form-check-input" type="radio" name="departamento" value="Maldonado" id="ubicacionMA">
                         <label class="form-check-label" for="ubicacionMA">
                             Maldonado
                         </label>
@@ -315,7 +313,6 @@
         <script src="scripts/parameterReader.js"></script>
         <script src="scripts/search.js"></script>
         <script src="scripts/detalles.js"></script>
-        <script src="scripts/parametros-filtros.js"></script>
         
     </body>
 </html>
